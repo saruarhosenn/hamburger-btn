@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hamburger Btn</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="hamburger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		const elment = document.querySelector('.hamburger');
+		const elment1 = document.querySelector('.nav-list');
+
+		elment.addEventListener("click", () => {
+			elment.classList.toggle('active');
+			elment1.classList.toggle('active');
+		})
+
+	</script>
+</body>
+
+</html>
